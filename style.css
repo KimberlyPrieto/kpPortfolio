@@ -181,7 +181,7 @@ h3 {
 
 
 /* media queries */
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1600px) {
 .hero-image {
   background-image: url("port.svg");
   height: 100%;
