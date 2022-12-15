@@ -1,0 +1,94 @@
+
+header {
+    line-height: 2em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+body {
+    background-color: black; 
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 1px;
+    padding-left: 2em;
+    line-height: 4em;
+    padding-right: 2em;
+    width: 50%;
+}
+
+.content{
+    margin-bottom: 300px;
+    padding: 10px;
+}
+
+h2 {
+  font-family:"Impact", sans-serif;
+  color: white;
+  font-size: 2em
+ 
+}
+
+h1 {
+  font-family:"Impact", sans-serif;
+  color: darkgray;
+  font-size: 3em;
+}
+
+h3 {
+  font-family:"Copperplate", sans-serif;
+  color: white; 
+  font-weight: 200;
+}
+
+p {
+  font-family: "Copperplate", sans-serif;
+  color: darkgray;
+  font-weight: 100;
+}
+
+.lrnmore {
+    color: black;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 1px;
+    padding-left: 2em;
+    line-height: 4em;
+    padding-right: 2em;
+    width: 50%;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+   color: white;
+   text-align: center;
+   margin-top: 1000px;
+}
+
+
+a:link, a:visited {
+  border:1px solid gray;
+  color: gray;
+  padding: 1px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: 100;
+  margin-bottom: 2em;
+margin: 10px 10px;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+}
+
+a:active {
+   background-color: white;
+   color: white; 
+}
+

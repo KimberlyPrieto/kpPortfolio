@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Kimberly's portfolio  </title>
+
+    <link rel="stylesheet" href="photostyle.css">
+</head>
+
+<body>
+
+<!--nav bar -->
+    
+<div class="container">
+    <div class="logo">
+        <a href="index.html">kp.</a>
+    </div>
+<div class="navbar">
+
+<div class="icon-bar" onclick="Show()">
+    <i></i>
+    <i></i>
+    <i></i>
+</div>
+
+<ul id="nav-lists">
+    <li class="close"><span onclick="Hide()">×</span></li>
+    <li><a href="photo.html">Photography</a></li>
+    <li><a href="fineart.html">Fine arts</a></li>
+    <li><a href="graph.html">Graphic design</a></li>
+	<li><a href="wfp.html">Wireframe/Prototype </a></li>
+    <li><a href="webs.html">Websites </a></li>
+    <li><a href="intern.html"> Design Internship </a></li>
+
+    
+</ul>
+
+</div>
+</div>
+
+<!-- content -->
+<div class="content">
+<h1> Photography </h1>
+    
+
+
+<div class="img-container">
+
+<img class="rect" alt="pic" src="photo10.jpg" />
+<p> Castile, New York  <br> 2022</p>
+
+<img class="rect" alt="pic" src="photo12.jpg" />
+<p> Brooklyn, New York  <br> 2022</p>
+
+<img class="rect" alt="pic" src="photo13.jpg" />
+<p> Corning, New York  <br> 2022</p>
+
+<img class="rect" alt="pic" src="photo11.jpg" />
+<p> New York, New York <br> 2022</p>
+
+<img class="rect" alt="pic" src="photo14.jpg" />
+<p> Niagara Falls, New York <br> 2022</p>
+
+<img class="square" alt="pic" src="photo3.jpg" />
+<p> Financial District, Manhattan  <br> 2021</p>
+
+<img class="square" alt="pic" src="photo6.jpg" width="550" height="500"/>
+<p> Soho, Manhattan <br> 2021</p>  
+    
+<img class="rect" alt="pic" src="photo1.jpg" />   
+<p> New York, New York<br> 2020</p>  
+    
+
+<img class="rect" alt="pic" src="photo4.jpg" />
+<p> Pace Gallery <br> New York, New York <br> 2020</p>  
+    
+<img class="rect" alt="pic" src="photo5.jpg" />
+<p> Chelsea, Manhattan <br> 2020</p>  
+
+    
+<img class="rect" alt="pic" src="photo9.jpg" />
+<p> Rochester, New York <br> 2020</p>  
+    
+    
+    </div>
+</div>
+<!-- footer -->
+
+<div class="footer">
+    <small>Copyright &copy;  2021 Kimberly Prieto's Portfolio. All Rights Reserved.</small> 
+    
+</div>
+            
+<!-- end of footer -->        
+    
+<!-- end of content -->
+
+<script>
+var navList = document.getElementById("nav-lists");
+function Show() {
+navList.classList.add("_Menus-show");
+}
+
+function Hide(){
+navList.classList.remove("_Menus-show");
+}
+</script>
+
+</body>
+</html>
+

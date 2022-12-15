@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Grafitti Street Art</title>
+
+    <link rel="stylesheet" href="assets/css/graffstyle.css">
+    
+    <script src="assets/js/slideshowcontinous2.js"></script>
+
+
+</head>
+
+<body onload="runit()">
+
+<!-- nav bar -->
+
+  <div class="container">
+    <div class="logo">
+        <a href="contact.html">bushwick, brooklyn </a>
+    </div>
+<div class="navbar">
+
+<div class="icon-bar" onclick="Show()">
+    <i></i>
+    <i></i>
+    <i></i>
+</div>
+
+<ul id="nav-lists">
+    <li class="close"><span onclick="Hide()">×</span></li>
+    <li><a href="culture.html">latinx culture</a></li>
+    <li><a href="gentrif.html">gentrification</a></li>
+    <li><a href="parade.html">VDQ parade</a></li>
+    <li><a href="graff.html">graffiti art</a></li>
+    <li><a href="shop.html">shopping</a></li>
+    <li><a href="rest.html">restaurants</a></li>
+</ul>
+
+</div>
+</div>
+<hr>
+    
+    
+
+<!-- content -->
+<div class="Content">
+    <!--Section 1-->
+    <div id="section1">
+        <header><h1>Graffiti Street art in Bushwick</h1></header>
+
+            <div id="pic">
+                <img id="slideshow" src="assets/images/art4.png" alt="art1" title="art">  
+            </div>
+    
+            <div id="block">
+               <p>The streets of Bushwick, Brooklyn is surrounded by graffiti art. From the walls of each building to the rooftops.
+<br><br>
+
+The Bushwick collective is one of the most famous attraction in Brooklyn. It is a series of street art that are spray painted onto the walls of every building within the area. 
+<br><br>
+The Bushwick collective is dedicated for artists to express their art, and it is personally my favorite place in Bushwick.
+<br><br>  
+My love for art and design is because growing up I was surrounded by the Bushwick Collective and other graffiti street art. Although, the Bushwick Collective is my favorite place, it is bittersweet because since it is an attraction spot the residents of the area are predominantly rich and white.   </p>
+</div>
+</div>
+</div>
+
+  <!--javascript -->
+<script>
+var navList = document.getElementById("nav-lists");
+function Show() {
+navList.classList.add("_Menus-show");
+}
+
+function Hide(){
+navList.classList.remove("_Menus-show");
+}
+</script>
+
+</body>
+</html>

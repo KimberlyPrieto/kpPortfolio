@@ -1,0 +1,195 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* css style for navbar */
+
+.container {
+  height: 60px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+  font-family: "Raleway", sans-serif;
+  
+}
+
+.container .logo {
+  max-width: 250px;
+  padding: 0 10px;
+  overflow: hidden;
+  font-variant: small-caps;
+  text-decoration: underline;
+  font-size: 20px;
+  color: gold;
+  font-weight: 700;
+  background: #202020;
+
+}
+
+.container .logo a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 60px;
+  font-variant: small-caps;
+  text-decoration: underline;
+  font-size: 20px;
+  color: gold;
+}
+
+.container .navbar {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 0 10px;
+}
+
+.container .navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container .navbar ul li a {
+  text-decoration: none;
+  color: #181818;
+  font-size: 15px;
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+  padding: 0 10px;
+  font-weight: 300;
+}
+
+.container .navbar ul li a:hover {
+  color: gold;
+  background-color: grey;
+}
+
+.container .navbar ul .close {
+  display: none;
+  text-align: right;
+  padding: 10px;
+}
+
+.container .navbar ul .close span {
+  font-size: 40px;
+  display: inline-block;
+  border: 1px solid #cccccc;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+/* three lines for nav list*/
+
+.container .navbar .icon-bar {
+  padding: 18px 8px;
+  width: 50px;
+  height: 60px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* three lines for nav list*/
+
+.container .navbar .icon-bar i {
+  background-color: dimgray;
+  height: 2px;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+.Content {
+    padding: 100px;
+
+     font-family: Raleway, sans-serif;
+    font-weight: 100;
+    padding:10px;
+    line-height: 40px  
+    
+}
+
+
+/* footer */
+.footer {
+   position: fixed;
+   padding: 8px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+.icon {
+    width: 60px;
+    height: 50px;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 900px) {
+    img {
+        width:400px;
+        height:250px;
+        margin-left: -75px;
+    
+    }
+  .container {
+    justify-content: space-between;
+}
+
+  .container .logo {
+    flex: 1;
+}
+
+  .container .navbar {
+    flex: 0;
+}
+
+  .container .navbar ul {
+    flex-wrap: nowrap;
+    position: fixed;
+    left: 100%;
+    flex-direction: column;
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transition: left .3s;
+}
+
+  .container .navbar ul li a {
+    padding: 10px;
+    font-size: 16px;
+    height: auto;
+    line-height: normal;
+    color: #555555;
+}
+
+  .container .navbar ul .close {
+    display: block;
+}
+
+  .container .navbar .icon-bar {
+    display: flex;
+}
+
+  .container .navbar ._Menus-show {
+    left: 0;
+}
+}

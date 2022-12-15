@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Kimberly's portfolio </title>
+
+    <link rel="stylesheet" href="graphstyle.css">
+</head>
+
+<body>
+
+<!--nav bar -->
+    
+<div class="container">
+    <div class="logo">
+        <a href="index.html">kp.</a>
+    </div>
+<div class="navbar">
+
+<div class="icon-bar" onclick="Show()">
+    <i></i>
+    <i></i>
+    <i></i>
+</div>
+
+<ul id="nav-lists">
+    <li class="close"><span onclick="Hide()">×</span></li>
+    <li><a href="photo.html">Photography</a></li>
+    <li><a href="fineart.html">Fine arts</a></li>
+    <li><a href="graph.html">Graphic design</a></li>
+	<li><a href="wfp.html">Wireframe/Prototype </a></li>
+    <li><a href="webs.html">Websites </a></li>
+    <li><a href="intern.html"> Design Internship </a></li>
+
+    
+</ul>
+
+</div>
+</div>
+
+<!-- content -->
+<div class="content">
+<h1> Graphic Design</h1>
+<p class = "above"> This page includes my work in Adobe Photoshop, Adobe illustrator, Adobe Premiere Pro and Adobe Indesign <br> All Photographs were taken by me </p>
+
+
+<div class="img-container"> 
+	
+<img class ="infograph" alt="pic" src="graph7.png"/>
+<p> "Cat vs. Dog infographic" 2022 
+<br> Adobe Illustrator and Adobe Photoshop</p>  
+	
+<img class = "landscape" alt="pic" src="graph4.jpg"/>
+<p> 2021
+<br> Poster dedicated to advocate migrant children <br>Adobe Photoshop and Illustrator </p> 
+	
+<img class ="poiret" alt="pic" src="graph8.png" />
+<p> "Poiret One" 2021 
+<br> Adobe Photoshop</p> 
+	
+    
+
+<img class= "square" alt="pic" src="graph3.svg"/>
+<p> "A Little Wine" 2021 
+<br> Adobe Illustrator</p>  
+    
+
+<img class= "portrait" alt="pic" src="typographycopy.png"/>
+<p> 2021 <br> Typography designs using only letters  <br>
+Adobe Illustrator</p>  
+
+    
+    
+<img class= "square" alt="pic" src="graph6.svg"/>
+<p> "Self-portrait" 2021 
+<br> Adobe Illustrator</p>  
+	
+	<img class= "square" alt="pic" src="graph5.svg"/>
+<p> "Portrait" 2020 
+<br> Adobe Illustrator</p>  
+
+<video controls="controls" name="Piece number 1">
+    <source src="AvisualofBushwick.mp4">
+</video>
+<p > "A Visual of Bushwick" 2019 
+<br> Personal photographs of Bushwick, Brooklyn. <br> Adobe Premiere Pro</p>
+    
+    
+
+</div>
+</div>
+<!-- footer -->
+
+<div class="footer">
+    <small>Copyright &copy;  2021 Kimberly Prieto's Portfolio. All Rights Reserved.</small> 
+    
+</div>
+            
+<!-- end of footer -->        
+    
+
+<!-- end of content -->
+
+<script>
+var navList = document.getElementById("nav-lists");
+function Show() {
+navList.classList.add("_Menus-show");
+}
+
+function Hide(){
+navList.classList.remove("_Menus-show");
+}
+</script>
+
+</body>
+</html>

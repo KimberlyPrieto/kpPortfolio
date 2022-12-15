@@ -1,0 +1,76 @@
+<!--page 1 HOMEPAGE-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Bushwick, Brooklyn  </title>
+
+    <link rel="stylesheet" href="./assets/css/contactstyle.css">
+</head>
+
+<body>
+
+<!--nav bar -->
+    
+<div class="container">
+    <div class="logo">
+        <a href="#">bushwick, brooklyn </a>
+    </div>
+<div class="navbar">
+
+<div class="icon-bar" onclick="Show()">
+    <i></i>
+    <i></i>
+    <i></i>
+</div>
+
+<ul id="nav-lists">
+    <li class="close"><span onclick="Hide()">×</span></li>
+    <li><a href="culture.html">latinx culture</a></li>
+    <li><a href="gentrif.html">gentrification</a></li>
+    <li><a href="parade.html"> VDQ parade</a></li>
+    <li><a href="graff.html">Graffiti art </a></li>
+    <li><a href="shop.html">shopping</a></li>
+    <li><a href="rest.html">restaurants</a></li>
+
+    
+</ul>
+
+</div>
+</div>
+
+    
+<!-- content -->
+    
+<div class="hero-image">
+    
+  <div class="hero-text">
+    
+    <h2> Explore <em>Bushwick, Brooklyn</em></h2>
+     <p class="text"> Hi! My name is Kimberly Prieto and I am a student at Rochester Institute of Technology.
+    Before moving to Rochester I was born and raised in Bushwick, Brooklyn. Bushwick, Brooklyn holds a very special place in my heart because it influenced me to become the artist I am today. </p>
+          
+     <p class="text"> Bushwick, Brooklyn is a predominantly low-income neighborhood located in New York City. Bushwick is well known for their Mexican taquerias and graffiti street art. Bushwick is walking distance from Queens and only a 20 minute train ride from Manhattan. Come take a look at my neighborhood!</p>
+  </div>
+</div>
+
+    
+<!-- end of content -->
+    
+    
+<script>
+var navList = document.getElementById("nav-lists");
+function Show() {
+navList.classList.add("_Menus-show");
+}
+
+function Hide(){
+navList.classList.remove("_Menus-show");
+}
+</script>
+
+</body>
+</html>

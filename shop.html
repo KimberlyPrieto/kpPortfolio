@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> shopping </title>
+
+    <link rel="stylesheet" href="assets/css/shopstyle.css">
+
+</head>
+
+<body>
+
+<!-- nav bar -->
+
+  <div class="container">
+    <div class="logo">
+        <a href="contact.html">bushwick, brooklyn </a>
+    </div>
+<div class="navbar">
+
+<div class="icon-bar" onclick="Show()">
+    <i></i>
+    <i></i>
+    <i></i>
+</div>
+
+<ul id="nav-lists">
+    <li class="close"><span onclick="Hide()">×</span></li>
+        <li><a href="culture.html">latinx culture</a></li>
+    <li><a href="gentrif.html">gentrification</a></li>
+    <li><a href="parade.html">VDQ parade</a></li>
+    <li><a href="gentrif.html">graffiti art</a></li>
+    <li><a href="shop.html">shopping</a></li>
+    <li><a href="rest.html">restaurants</a></li>
+
+</ul>
+
+</div>
+</div>
+<hr>
+    
+    
+
+<!-- content -->
+<div class="Content">
+    <h1>Shopping</h1>
+<p class="descrip"> Are you looking to shop? There are a lot of shopping spots in Bushwick!<br> 
+Here are some stores: </p> 
+    <h3>Located in Knickerbocker Avenue</h3>
+    
+<p class="closeup">Shoe Stores:</p>
+    
+<ul class ="shoplist"> 
+ <li>Foot locker </li>
+ <li>Kids Foot locker </li>
+ <li>Snipes</li>
+ <li>Jimmy Jazz</li>
+ <li>Hyperactive</li>
+ <li>Blue City</li>
+</ul>
+
+<p>Clothing stores:</p>
+<ul class ="shoplist"> 
+ <li>Pink Bella Fashion</li>
+ <li>Chocolate Women's Fashion Store </li>
+ <li>Shoppers World</li>
+ <li>Rainbows</li>
+</ul>
+    
+
+    
+</div>
+
+  <!--javascript -->
+<script>
+var navList = document.getElementById("nav-lists");
+function Show() {
+navList.classList.add("_Menus-show");
+}
+
+function Hide(){
+navList.classList.remove("_Menus-show");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset= "utf-8"/>
+    <title> New York City </title>
+    <link rel="stylesheet" type="text/css" href="assets/css/fdstyle.css">
+    
+    <script> 
+    function validationform() {
+        "use strict";
+        let validName=true;
+        if (document.getElementById("visitor").value==""){
+            
+            document.getElementById("visitor").style.borderColor="red";
+            document.getElementById("visitor").style.backgroundColor="pink";
+            validName=false;
+        }
+        else {
+            document.getElementById("visitor").style=null;
+            validName=true;
+        }
+        console.log("In function validate form:"+ validName);
+        return (validName);
+    }
+    </script>
+    
+</head>
+    
+<body> 
+    
+<!-- nav bar -->
+
+  <div class="container">
+    <div class="logo">
+        <a href="contact.html">bushwick, brooklyn </a>
+    </div>
+<div class="navbar">
+
+<div class="icon-bar" onclick="Show()">
+    <i></i>
+    <i></i>
+    <i></i>
+</div>
+
+<ul id="nav-lists">
+    <li class="close"><span onclick="Hide()">×</span></li>
+    <li><a href="culture.html">latinx culture</a></li>
+    <li><a href="gentrif.html">gentrification</a></li>
+    <li><a href="parade.html">VDQ parade</a></li>
+    <li><a href="graff.html">graffiti art</a></li>
+    <li><a href="shop.html">shopping</a></li>
+    <li><a href="rest.html">restaurants</a></li>
+        <li><a href="proj2ref.html">reference page</a></li>
+
+    
+</ul>
+
+</div>
+</div>
+<hr>
+<!-- end of nav bar -->
+
+    
+    
+
+
+<!-- FORM -->
+    <div class ="Content"> 
+<form action="feedback.php" method="POST"
+      onsubmit="return validationform();">
+    
+ <div class="middle">    
+    <div id= "headingquestion">
+        
+        <h2 class="underline">
+           Please provide your feedback on the Bushwick, Brooklyn 
+        </h2>
+        <hr>
+    </div>
+    
+    <div id="family"> 
+
+    Enter your name
+        
+    <input type="text" id="visitor" name="visitor"
+           placeholder="Required Entry">
+        
+    <span class ="astric"> * </span>
+        
+    </div>
+    
+    
+    <!--- Date form for documenting when they visited-->
+    
+    <div id="visit">
+        When did you visit this website?
+        
+        <input type="date" id="visitDate" name="visitDate">
+        <span class="astric"> * </span> <br/>
+        
+    <!-- invisible paragraph for the error message-->
+        
+        <p id="errorMessage"> </p>
+
+    </div>
+    
+    <!-- field set for fav Borough -->
+<div id="favplace"> 
+<fieldset>
+    <legend> What did you find Most interesting about Bushwick? - Must select one </legend>
+    
+        <input type="radio" name="ftopic" value="culture" id="qn">
+    <label for="qn"> Exposure to Latinx culture </label><br>
+    
+        <input type="radio" name="ftopic" value="gent" id="bk">
+    <label for="bk"> Gentrification</label><br>
+    
+        <input type="radio" name="ftopic" value="Graf" id="bx">
+    <label for="bx"> Graffiti street art </label><br>
+    
+        <input type="radio" name="ftopic" value="shop" id="mn">
+    <label for="mn"> shopping</label><br>
+    
+        <input type="radio" name="ftopic" value="rest" id="st">
+    <label for="st"> Restaurants</label><br>
+    
+</fieldset>
+</div>   <!-- end of radio buttons for fav boroughs -->
+     
+<!--rating -->
+     
+      <div id="scrollbar">
+		<!-- Scrollbar for town raiting -->
+		<br>Please rate your interest in visiting Bushwick, Brooklyn <br>
+		<p>0
+		<input type="range" name="rating" min="0" max="10" step="1" list="set">
+		<datalist id = "set">
+		<option>0</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		<option>6</option>
+		<option>7</option>
+		<option>8</option>
+		<option>9</option>
+		<option>10</option>
+		</datalist>
+		10</p>
+		</div><!-- end of range bar -->
+
+
+		<div id="button">
+			<input type = "submit"  >
+		</div><!-- end of div for submit button -->
+
+
+</div> 
+    </form>
+</div>
+    
+    
+    <script>
+var navList = document.getElementById("nav-lists");
+function Show() {
+navList.classList.add("_Menus-show");
+}
+
+function Hide(){
+navList.classList.remove("_Menus-show");
+}
+</script>
+
+</body>
