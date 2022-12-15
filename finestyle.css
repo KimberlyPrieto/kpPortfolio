@@ -166,7 +166,7 @@ margin-bottom: 100px;
 }
 /* media queries */
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1600px) {
 
   .container {
     justify-content: space-between;
@@ -231,6 +231,4 @@ margin-bottom: 100px;
     height: 400px;
     
 }
-
-
 }
