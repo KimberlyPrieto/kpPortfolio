@@ -229,20 +229,8 @@ p {
 
 
 /* media queries */
-@media only screen and (max-width:2400px) {
-
- p {
-margin-left: 400px;
-margin-right: 400px;	 
-}
-}
 	
 @media only screen and (max-width:1600px) {
-
- p {
-margin-left: 400px;
-margin-right: 400px;	 
-}
   .container {
     justify-content: space-between;
     background-color: black;
@@ -300,10 +288,6 @@ margin-right: 400px;
     height: 500px;
     
 }
- p {
-margin-left: 400px;
-margin-right: 400px;	 
-}
     video {
     width: 500px;
     
@@ -335,10 +319,6 @@ margin-right: 400px;
 
 @media only screen and (max-width: 600px) {
 
- p {
-margin-left: 100px;
-margin-right: 100px;	 
-}
     .square {
     width: 400px;
     height: 400px;
