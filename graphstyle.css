@@ -135,7 +135,6 @@ body, html{
 p {
     color: dimgray;
     padding-bottom: 60px;
-    margin: 50px;
     line-height: 25px;
      font-family: "Helvetica", sans-serif;
 }
@@ -233,6 +232,10 @@ p {
 
 @media only screen and (max-width:1600px) {
 
+ p {
+margin-left: 400px;
+margin-right: 400px;	 
+}
   .container {
     justify-content: space-between;
     background-color: black;
@@ -289,6 +292,10 @@ p {
     width: 500px;
     height: 500px;
     
+}
+ p {
+margin-left: 400px;
+margin-right: 400px;	 
 }
     video {
     width: 500px;
